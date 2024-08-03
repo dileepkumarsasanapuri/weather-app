@@ -1,0 +1,164 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    font-size: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Montserrat Alternates", sans-serif;
+  }
+  
+  body {
+    background-color: #1e3c72;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  /* Weather Card Container */
+  
+  .weather_card_container {
+    max-width: 500px;
+    padding: 30px 24px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Search Bar */
+  
+  .search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 46px;
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 30px;
+    width: 100%;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .search .icon {
+    color: #333;
+  }
+  
+  input {
+    border: none;
+    font-family: "Montserrat Alternates";
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  input::placeholder {
+    color: #4f4f4f;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  /* Weather Card */
+  
+  .weather_card {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    padding: 32px 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    transform: all 0.3s ease;
+    max-width: 550px;
+    margin: 20px auto;
+  }
+  
+  /* Typography */
+  
+  h1 {
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 5px;
+    margin-right: 12px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  /* More Section */
+  
+  .more-section {
+    margin: 12px 0 18px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    border-right: 0;
+    border-left: 0;
+    padding: 18px 0;
+  }
+  
+  .more-info {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .more-info:last-child {
+    margin-left: auto;
+  }
+  
+  .more-info .icom {
+    margin-bottom: 2px;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .weather_card_container {
+      padding: 20px;
+    }
+    .search {
+      margin-bottom: 20px;
+    }
+    .weather_card {
+      padding: 20px;
+    }
+    h1 {
+      font-size: 36px;
+      line-height: 48px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .weather_card_container {
+      padding: 10px;
+    }
+    .search {
+      margin-bottom: 10px;
+    }
+    .weather_card {
+      padding: 10px;
+    }
+    h1 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
